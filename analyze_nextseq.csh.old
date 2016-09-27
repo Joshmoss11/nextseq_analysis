@@ -25,6 +25,6 @@ srun gunzip ./*gz
 echo done extracting fastq files
 echo beginning matlab analysis
 setenv MATLABPATH '/cs/icore/joshua.moss/scripts/nextseq'
-srun --mem=16000 --cpus-per-task=32 matlab -nodesktop -nosplash -r 'methyl_plasma_pipeline3'
+srun matlab -nodesktop -nosplash -r 'methyl_plasma_pipeline3'
 rm -f *fastq *fasta
 echo Done analysis!
